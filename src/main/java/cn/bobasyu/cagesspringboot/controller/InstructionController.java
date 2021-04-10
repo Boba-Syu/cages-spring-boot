@@ -2,10 +2,7 @@ package cn.bobasyu.cagesspringboot.controller;
 
 import cn.bobasyu.cagesspringboot.service.InstructionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 发送指令到下位机的web RESTFul API
@@ -14,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 public class InstructionController {
     private final InstructionService instructionService;
 
