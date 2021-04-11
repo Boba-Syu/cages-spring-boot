@@ -42,8 +42,8 @@ public class OperationController {
         return operationService.insert(operation);
     }
 
-    @DeleteMapping("/operation")
-    public int delete(Integer id) {
+    @DeleteMapping("/operation/{id}")
+    public int delete(@PathVariable Integer id) {
         return operationService.deleteById(id);
     }
 

@@ -41,8 +41,8 @@ public class TimingTaskTypeController {
         return timingTaskTypeService.update(timingTaskType);
     }
 
-    @DeleteMapping("/timing_task_type")
-    public int delete(Integer id) {
+    @DeleteMapping("/timing_task_type/{id}")
+    public int delete(@PathVariable Integer id) {
         return timingTaskTypeService.deleteById(id);
     }
 }

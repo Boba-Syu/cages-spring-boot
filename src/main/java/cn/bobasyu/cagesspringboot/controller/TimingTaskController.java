@@ -53,8 +53,8 @@ public class TimingTaskController {
         return timingTaskService.update(timingTask);
     }
 
-    @DeleteMapping("timing_task")
-    public int delete(Integer id) {
+    @DeleteMapping("timing_task/{id}")
+    public int delete(@PathVariable Integer id) {
         return timingTaskService.deleteById(id);
     }
 }

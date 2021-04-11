@@ -42,8 +42,8 @@ public class OperationTypeController {
         return operationTypeService.insert(operationType);
     }
 
-    @DeleteMapping("/operation_type")
-    public int delete(Integer id) {
+    @DeleteMapping("/operation_type/{id}")
+    public int delete(@PathVariable Integer id) {
         return operationTypeService.deleteById(id);
     }
 

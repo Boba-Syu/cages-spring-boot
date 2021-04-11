@@ -47,8 +47,8 @@ public class TemperatureController {
         return temperatureService.update(temperature);
     }
 
-    @DeleteMapping("temperature")
-    public int delete(Integer id) {
+    @DeleteMapping("temperature/{id}")
+    public int delete(@PathVariable Integer id) {
         return temperatureService.deleteById(id);
     }
 }
