@@ -10,10 +10,10 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 @Getter
-public enum Instruction {
-    HEAT_UP("加温", 0),
-    HEAT_DOWN("加温", 1),
-    FEED("喂食", 2),
+public enum InstructionEnum {
+    HEAT_UP("加温", 1),
+    HEAT_DOWN("加温", 2),
+    FEED("喂食", 3),
     OPEN_MOTION("打开摄像头", 4),
     CLOSE_MOTION("关闭摄像头", 5);
 

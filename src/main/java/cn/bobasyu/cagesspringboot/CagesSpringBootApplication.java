@@ -19,7 +19,7 @@ public class CagesSpringBootApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        int port = 8888;
+        int port = 6666;
         try {
             TCPLinkServer.start(port);
             logger.info("端口" + port + "启动成功");
